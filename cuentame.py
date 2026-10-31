@@ -47,6 +47,7 @@ def ask_question(name: str, exchanges: list[tuple[str, str]], model: str) -> str
             "model": model,
             "prompt": build_question_prompt(name, exchanges),
             "stream": False,
+            "think": False,
             "options": {"temperature": 0.4, "num_predict": 90},
         }
     ).encode("utf-8")
