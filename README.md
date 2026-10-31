@@ -2,7 +2,7 @@
 
 Una pequeña entrevistadora local para conservar recuerdos familiares sin pedirle a la IA que invente una biografía. Gemma, mediante Ollama en `127.0.0.1`, propone una pregunta a la vez. El archivo final copia **literalmente** las respuestas de la persona entrevistada. Los vacíos quedan abiertos.
 
-Proyecto creado para [Hacktoberfest Open-Source AI Challenge: Week 4](https://dev.to/challenges/hacktoberfest-week4-2026-10-26), tema *Ghost in the Machine*. La demo ficticia y las pruebas de código no equivalen a una ejecución real del modelo.
+Proyecto creado para [Hacktoberfest Open-Source AI Challenge: Week 4](https://dev.to/challenges/hacktoberfest-week4-2026-10-26), tema *Ghost in the Machine*. El ejemplo de formato no llama al modelo; además se hizo una prueba real de una pregunta con Gemma y datos ficticios.
 
 ## Uso
 
