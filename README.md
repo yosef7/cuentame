@@ -27,4 +27,4 @@ Los resultados van a `recuerdos/`, excluido de Git. El programa no sobrescribe a
 python3 -m unittest -v
 ```
 
-Las pruebas simulan la respuesta HTTP de Ollama y comprueban la ruta local, el historial enviado y la copia literal de las respuestas. Falta una prueba de extremo a extremo con Gemma en ejecución.
+Las pruebas simulan la respuesta HTTP de Ollama y comprueban la ruta local, el historial enviado y la copia literal de las respuestas. Además, el 31 oct se ejecutó una entrevista de una pregunta con `gemma4:e2b` instalado y una respuesta ficticia; la ejecución completa de seis preguntas sigue pendiente. El request usa `think: false` porque una prueba inicial agotó los tokens en pensamiento interno sin devolver una pregunta visible.
