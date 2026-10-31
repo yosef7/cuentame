@@ -21,7 +21,9 @@ class CuentameTests(unittest.TestCase):
         self.assertEqual(question, "¿Qué canción recuerdas?")
         request = send.call_args.args[0]
         self.assertEqual(request.full_url, cuentame.OLLAMA_URL)
-        self.assertIn("Arroz", json.loads(request.data)["prompt"])
+        payload = json.loads(request.data)
+        self.assertIn("Arroz", payload["prompt"])
+        self.assertIs(payload["think"], False)
 
     def test_memory_uses_exact_answers(self):
         content = cuentame.render_memory("Elena", [("¿Qué recuerdas?", "Arroz con coco\ny una canción")])
